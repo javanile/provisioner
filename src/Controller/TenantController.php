@@ -3,6 +3,7 @@
 namespace Javanile\Provisioner\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 
 class TenantController extends AbstractController
 {
@@ -11,6 +12,8 @@ class TenantController extends AbstractController
      */
     public function create()
     {
-
+        return $this->json([
+            'message' => 'Hello World!'
+        ]);
     }
 }
